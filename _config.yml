@@ -162,7 +162,7 @@ external_sources:
 # Collections
 # -----------------------------------------------------------------------------
 
-collections:
+# collections:
   # news:
   #   defaults:
   #     layout: post
