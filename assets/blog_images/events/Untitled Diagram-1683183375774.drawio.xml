@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="ac.draw.io" modified="2023-12-25T10:32:27.913Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15" etag="KWc3-O6zFlrW7VH3XIbv" version="22.1.11" type="embed">
+  <diagram id="iVch64_WzyVrcGFN_59f" name="Page-1">
+    <mxGraphModel dx="1026" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-14" value="Notification" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="460" y="880" width="135" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-25" value="Can expect&lt;br&gt;Reply Fact Event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PCEeoDmyQqQHC7_QN0kU-2" target="PCEeoDmyQqQHC7_QN0kU-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-2" value="Command" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="160" y="610" width="135" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-10" value="Can be &lt;br&gt;fire and forget" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PCEeoDmyQqQHC7_QN0kU-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="228" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-3" value="Imperative&amp;nbsp;&lt;br&gt;&lt;br&gt;Can be renamed&lt;br&gt;Can be reshaped&lt;br&gt;&lt;br&gt;&lt;br&gt;Expects action" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="167.5" y="650" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PCEeoDmyQqQHC7_QN0kU-4" target="PCEeoDmyQqQHC7_QN0kU-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PCEeoDmyQqQHC7_QN0kU-4" target="PCEeoDmyQqQHC7_QN0kU-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PCEeoDmyQqQHC7_QN0kU-4" target="PCEeoDmyQqQHC7_QN0kU-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-4" value="Fact" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="610" y="610" width="135" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-5" value="Declerative&lt;br&gt;&lt;br&gt;Immutable&lt;br&gt;Describes a past that has occurred&lt;br&gt;&lt;br&gt;No expectation of action" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="617.5" y="650" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-13" value="Very small&lt;br&gt;&lt;br&gt;Declares minimal facts" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="467.5" y="920" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-15" value="State &lt;br&gt;Full" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="610" y="880" width="135" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-16" value="Contains the entire model&lt;br&gt;&lt;br&gt;The current shape of model at time of emit" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="617.5" y="920" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-20" value="State &lt;br&gt;Delta" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="760" y="880" width="135" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PCEeoDmyQqQHC7_QN0kU-21" value="Contains changes to model&lt;br&gt;&lt;br&gt;Mutates model shape since last time of Delta emit" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="767.5" y="920" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="-8iACnefVZ1N1l_EI_la-1" value="As events are immutable, correct old with new events" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="810" y="650" width="120" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

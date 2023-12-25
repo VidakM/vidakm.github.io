@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Software thoughts # the website title (if blank, full name will be used instead)
+title: Open Architecture thoughts # the website title (if blank, full name will be used instead)
 first_name: Vidak
 middle_name: 
 last_name: Mijailovic
-email: you@example.com
+email: vidak.mijailovic@netigate.se
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A blog where I share thoughts on interesting solutions me and my colleagues find. Either as notes, guidelines or as practical reference architectures.
 footer_text: >
@@ -42,6 +42,14 @@ repo_trophies:
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
 rss_icon: true
+
+# -----------------------------------------------------------------------------
+# Threads Feed
+# -----------------------------------------------------------------------------
+# will use title and url fields
+# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+
+threads_icon: true
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -104,7 +112,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Threads: @vidmij
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -396,23 +404,3 @@ medium_zoom:
   version: "1.0.8"
   integrity: "sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8="
 
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
