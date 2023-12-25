@@ -1,7 +1,7 @@
 # Open Architecture thoughts
 ### Some ideas and some ramblings
 
-<img src="./assets/img/prof_pic.jpg" alt="alt text" title="Optional title" style="width: 300px; padding-left: 30px; padding-right:10px; float: right;"/>
+<img src="./assets/img/prof_pic.jpg" alt="alt text" title="Optional title" style="width: 300px; padding-left: 30px; padding-right:10px; float: right;" align="right"/>
 
 Welcome to my blog. This is simply a corner on the web where I jot down some thoughts on software design and process with the hopes of feedback and discourse to spark.
 
@@ -11,4 +11,4 @@ Some posts are simply writing down the conclusions me and my colleagues have rea
 
 The idea is to aggregate this into a software landscape map that we, and perhaps others, can use to navigate the field, onboard each other and aligns teams.
 
-You can find me on threads: [@vidmij]('https://www.threads.net/@vidmij')
+You can find me on threads: [@vidmij](https://www.threads.net/@vidmij)
