@@ -1,5 +1,3 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Some posts are simply writing down the conclusions me and my colleagues have reached, for example what our definitions of certain concepts are, for example events. Others are our practical conclusions of error handling when running event driven services in production. Some are our guideliens for how to develop the software with the flavour of ADRs that worked for us and our process.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+The idea is to aggregate this into a software landscape map that we, and perhaps others, can use to navigate the field, onboard each other and aligns teams.
