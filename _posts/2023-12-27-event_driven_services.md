@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event driven services
+title: 🎏 Event driven services
 date:   2023-12-27 09:00:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices
@@ -90,3 +90,10 @@ The opposite of this pattern is to use direct CRUD point-to-point commands. To r
 
 
 {% drawio path="assets/blog_images/event_driven_services/Untitled_Diagram-1680524450442.drawio.xml" page_number=0> height=550 %}
+
+### Multi-cloud and Event Driven Service
+As services can communicate asynchronously through events using for example Aiven Kafka at scale, events can be used to decouple services and orchestrate complex workflows across different domains and clouds.
+
+By using events, services do not need to know the location or availability of other services, which eliminates the need for a Service Mesh, Service Discovery and advanced DNS configurations. Event Driven Service design with Kafka and Events can enable simple cross cloud architectures that are scalable, resilient and adaptable.
+
+{% drawio path="assets/blog_images/event_driven_services/Untitled_Diagram-1681813875423.drawio.xml" page_number=0> height=500 %}

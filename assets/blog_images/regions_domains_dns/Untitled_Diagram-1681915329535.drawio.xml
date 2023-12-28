@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="ac.draw.io" modified="2023-12-28T13:01:44.613Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15" etag="SAD3awsbskztP2ud9inr" version="22.1.15" type="embed">
+  <diagram id="dyaV8iSs9fHPUTYwCFle" name="Page-1">
+    <mxGraphModel dx="1876" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="teANNRpSb0PYtAI6VP0J-2" value="Contoso on-premise" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="442.5" y="636.25" width="235" height="187.5" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-5" value="contoso.netigate.io" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="teANNRpSb0PYtAI6VP0J-3" target="teANNRpSb0PYtAI6VP0J-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-3" value="Contoso customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="350" y="300" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.88;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="teANNRpSb0PYtAI6VP0J-4" target="teANNRpSb0PYtAI6VP0J-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="teANNRpSb0PYtAI6VP0J-4" target="teANNRpSb0PYtAI6VP0J-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-4" value="Ingress" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-6" value="Netigate Cloud" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry y="610" width="310" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="95" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-8" value="EX cluster" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="500" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-10" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="105" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="115" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-12" value="CX cluster" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="125" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="teANNRpSb0PYtAI6VP0J-16" target="teANNRpSb0PYtAI6VP0J-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="teANNRpSb0PYtAI6VP0J-16" target="teANNRpSb0PYtAI6VP0J-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-16" value="Ingress" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-17" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-205" y="620" width="310" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-19" value="snow.netigate.io" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="teANNRpSb0PYtAI6VP0J-18" target="teANNRpSb0PYtAI6VP0J-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-18" value="Snow customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-5" y="300" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="teANNRpSb0PYtAI6VP0J-20" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8KYwdBs535azIACHWppv-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8KYwdBs535azIACHWppv-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8KYwdBs535azIACHWppv-3" value="EX cluster" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="-80" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
