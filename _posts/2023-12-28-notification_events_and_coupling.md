@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notification events and strong coupling
+title: 🛍️ Notification events and strong coupling
 date: 2023-12-28 10:05:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices

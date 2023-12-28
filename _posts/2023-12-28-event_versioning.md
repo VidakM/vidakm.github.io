@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event Versioning and Upgrades
+title: 🗃️ Event Versioning and Upgrades
 date: 2023-12-28 12:00:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices

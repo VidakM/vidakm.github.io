@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scalability and Event Bus (Kafka)
+title: 🧮 Scalability and Event Bus (Kafka)
 date: 2023-12-28 12:38:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices

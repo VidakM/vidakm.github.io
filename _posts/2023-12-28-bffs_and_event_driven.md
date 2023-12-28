@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BFFs and Event Driven Design
+title: 📡 BFFs and Event Driven Design
 date:  2023-12-28 09:05:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven bff front-end

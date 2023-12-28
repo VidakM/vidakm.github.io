@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event Driven Service startup first time
+title: 🚀 Event Driven Service startup first time
 date: 2023-12-28 12:18:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices
