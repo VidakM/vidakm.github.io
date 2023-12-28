@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CQRS and state in Event Driven Services
-date:   2023-12-27 09:05:00
+date:   2023-12-28 09:10:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices
 categories: guidelines
