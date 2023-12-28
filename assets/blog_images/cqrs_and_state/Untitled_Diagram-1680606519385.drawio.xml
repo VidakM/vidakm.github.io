@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="ac.draw.io" modified="2023-12-28T10:21:30.073Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15" etag="m81k8MurlzUdcCC460GP" version="22.1.15" type="embed">
+  <diagram id="U8kbtRiG0L1hUXD2JipY" name="Page-1">
+    <mxGraphModel dx="1026" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-1" value="Service A" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;spacingLeft=13;" parent="1" vertex="1">
+          <mxGeometry x="150" y="400" width="260" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-2" value="Table A" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="170" y="525" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-26" value="Fact event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.855;entryY=0;entryDx=0;entryDy=4.35;entryPerimeter=0;dashed=1;" parent="1" source="THTvBi_OHCQbNXQGgpV2-3" target="THTvBi_OHCQbNXQGgpV2-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="560" />
+              <mxPoint x="590" y="695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-3" value="Event bus" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;direction=west;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="372.5" y="487.5" width="50" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="THTvBi_OHCQbNXQGgpV2-5" target="THTvBi_OHCQbNXQGgpV2-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=40;entryPerimeter=0;" parent="1" source="THTvBi_OHCQbNXQGgpV2-5" target="THTvBi_OHCQbNXQGgpV2-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-5" value="CRUD" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="235" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-7" value="Command" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="1" target="THTvBi_OHCQbNXQGgpV2-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-12" value="Service B" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;spacingLeft=13;" parent="1" vertex="1">
+          <mxGeometry x="153" y="730" width="260" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-13" value="Table B" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="173" y="855" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-27" value="Fact event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.145;entryY=0;entryDx=0;entryDy=4.35;entryPerimeter=0;dashed=1;" parent="1" source="THTvBi_OHCQbNXQGgpV2-14" target="THTvBi_OHCQbNXQGgpV2-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="890" />
+              <mxPoint x="590" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-14" value="Event bus" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;direction=west;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="375.5" y="817.5" width="50" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="THTvBi_OHCQbNXQGgpV2-17" target="THTvBi_OHCQbNXQGgpV2-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=40;entryPerimeter=0;" parent="1" source="THTvBi_OHCQbNXQGgpV2-17" target="THTvBi_OHCQbNXQGgpV2-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-17" value="CRUD" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="238" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-18" value="Command" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="1" target="THTvBi_OHCQbNXQGgpV2-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="278" y="650" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-19" value="Service C" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;spacingLeft=13;" parent="1" vertex="1">
+          <mxGeometry x="870" y="640" width="250" height="262.5" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-20" value="Joins&lt;br&gt;Table A&lt;br&gt;Table B" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="965" y="790" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-29" value="Fact event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="THTvBi_OHCQbNXQGgpV2-21" target="THTvBi_OHCQbNXQGgpV2-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-21" value="Event bus" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;direction=west;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="590" y="640" width="50" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="THTvBi_OHCQbNXQGgpV2-24" target="THTvBi_OHCQbNXQGgpV2-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-31" value="Read" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="THTvBi_OHCQbNXQGgpV2-24" target="THTvBi_OHCQbNXQGgpV2-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-24" value="Read &lt;br&gt;Only" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="955" y="672.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-30" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="980" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-32" value="Atomic write to both" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="235" y="510" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THTvBi_OHCQbNXQGgpV2-33" value="Atomic write to both" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="238" y="842.5" width="90" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
