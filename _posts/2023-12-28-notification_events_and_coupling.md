@@ -5,12 +5,12 @@ date: 2023-12-28 10:05:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices
 categories: guidelines
-thumbnail: assets/blog_images/notification_events_and_coupling/banner_notification_events_and_coupling.png
+thumbnail: assets/blog_images/notification_events_and_coupling/banner_notification_events_and_coupling.jpg
 toc:
   sidebar: left
 ---
 
-{% include figure.html path="assets/blog_images/notification_events_and_coupling/banner_notification_events_and_coupling.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/blog_images/notification_events_and_coupling/banner_notification_events_and_coupling.jpg" class="img-fluid rounded z-depth-1" %}
 
 As we mentioned in previous articles, there are two types of Fact Events, notifications, and state transfer events. Notification events are lightweight Fact Events that don’t carry much information, but only tell you an action occurred, and which entities were involved. State transfer events on the other hand contain the complete delta of changes, or the full result model after the change has occurred. 
 

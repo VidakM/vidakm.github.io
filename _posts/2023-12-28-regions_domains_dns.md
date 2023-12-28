@@ -29,7 +29,7 @@ Furthermore, as each customer could have a dedicated subdomain ingress, we can s
 Proposal: `<customer>.<company>.<tld>`
 Example: `contoso.netigate.io`
 
-{% drawio path="assets/blog_images/regions_domains_dns/Untitled_Diagram-1681915329535.drawio.xml" page_number=0> height=300 %}
+{% drawio path="assets/blog_images/regions_domains_dns/Untitled_Diagram-1681915329535.drawio.xml" page_number=0> height=600 %}
 
 ### API endpoints - Apps and product vs customer APIs
 
@@ -65,7 +65,7 @@ Proposal for customer API: `api.<company>.<tld>`
 Examples from current production: `api.netigate.io`
 
 
-{% drawio path="assets/blog_images/regions_domains_dns/Untitled_Diagram-1681914830875.drawio.xml" page_number=0> height=300 %}
+{% drawio path="assets/blog_images/regions_domains_dns/Untitled_Diagram-1681914830875.drawio.xml" page_number=0> height=600 %}
 
 #### Product URL - for independent teams 
 
