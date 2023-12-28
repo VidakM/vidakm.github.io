@@ -80,7 +80,7 @@ Command events can be used to perform actions, but also to retrieve data or perf
 
 A worker service can publish a topic and define Command events for use by the network. A client service can then issue a Command Event on the network and wait for a result. The result can either be published on the worker services general event topic, or on a topic the client specifies as a private reply topic in the Command Event. 
 
-Example. Emit event of type `PersonaService.CreatePersona` on the topic `arcadia.personaservice.commands` with property `reply_topic:arcadia.personabff.private.reply` . Wait for command results on `arcadia.personabff.private.reply`. The resulting Command Event should a format specified by the worker service.  Read more here: [( :e-mail:Events / Command event Saga)](http://localhost:8080/blog/2023/events/#command-event-with-reply---saga)
+Example. Emit event of type `PersonaService.CreatePersona` on the topic `arcadia.personaservice.commands` with property `reply_topic:arcadia.personabff.private.reply` . Wait for command results on `arcadia.personabff.private.reply`. The resulting Command Event should a format specified by the worker service.  Read more here: [( :e-mail:Events / Command event Saga)](/blog/2023/events/#command-event-with-reply---saga)
 
 The benefit of this pattern is resiliency. As the commands are issued through an event bus, a failure in one service will simply result in another service taking over the work. Service outage will result in the commands resuming once up agian. 
 
@@ -110,7 +110,7 @@ Internal:
 * [( :satellite:BFFs and Event Driven Design.)](/blog/2023/bffs_and_event_driven/)
 * [(:mailbox_with_no_mail:Event Driven Services / Example use cases SAGA)](/blog/2023/event_driven_services/#example-use-cases---saga)
 * [(:rocket:Event Driven Service startup first time / Deploying to existing environment)](/blog/2023/event_driven_startup/#deploying-to-existing-environment)
-* [( :e-mail:Events / Command event Saga)](http://localhost:8080/blog/2023/events/#command-event-with-reply---saga)
+* [( :e-mail:Events / Command event Saga)](/blog/2023/events/#command-event-with-reply---saga)
 
 
 
