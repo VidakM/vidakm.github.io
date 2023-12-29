@@ -12,7 +12,7 @@ toc:
 
 {% include figure.html path="assets/blog_images/event_driven_startup/banner_event_driven_startup.png" class="img-fluid rounded z-depth-1" %}
 
-When basing your service architecture on Event Driven Services, you strive to keep the amount of CRUD operations low and have the services be fully reactive. However, depending on the environment, this can be difficult to achieve when deploying a service for the first time. :mailbox_with_no_mail:Event Driven Services  
+When basing your service architecture on Event Driven Services, you strive to keep the amount of CRUD operations low and have the services be fully reactive. However, depending on the environment, this can be difficult to achieve when deploying a service for the first time. [(:mailbox_with_no_mail: Event Driven Services)](/blog/2023/event_driven_services/) 
 
 A few startup problems resolve themselves. Sometimes the service has no events to consume due to the Event Bus not being available yet. The service can also be the first service to be deployed which means it will produce nothing until its dependency services start producing events. However, there are a few more complicated scenarios to consider.
 
@@ -21,7 +21,7 @@ Sometimes services need to catch up on past data to perform analysis or track al
 
 Most event buses are configured to persist events for 30 days, after which they are pruned. If you are in a mature environment, your local producers of interest might provide an API to re-emit all their event-log, in order, on a private topic for you. This way you can catch up by listening to their event log. But if services have run for many years, this too can be a very time-consuming task.
 
-It might be a good strategy to implement a snapshotting read API in your services to allow quick catchup. On startup, download the entire aggregated model snapshot and then start consuming events to keep up. You can read about event logs, snapshots and CQRS here: :flags:CQRS and state in Event Driven Services .
+It might be a good strategy to implement a snapshotting read API in your services to allow quick catchup. On startup, download the entire aggregated model snapshot and then start consuming events to keep up. You can read about event logs, snapshots and CQRS here: [( :flags: CQRS and state in Event Driven Services)](/blog/2023/cqrs_and_state/).
 
 This too can be a time-consuming operation as the datasets might be gigabytes in size. The data retrieval calls could be split up into batches based on dimensions to parallelize, such as per tenant and some other attribute. This could also be further split up or streamed using gRPC Streaming or an eventbus or by asking the producer to publish to one of your private topics. 
 
@@ -42,3 +42,9 @@ Another example can be the EEX-Engagementservice, serving a list of default Driv
 
 {% drawio path="assets/blog_images/event_driven_startup/Untitled_Diagram-1682347877003.drawio.xml" page_number=0> height=500 %}
 
+
+## References
+
+Internal:
+* [:mailbox_with_no_mail: Event Driven Services](/blog/2023/event_driven_services/)
+* [ :flags: CQRS and state in Event Driven Services](/blog/2023/cqrs_and_state/)
