@@ -57,7 +57,7 @@ navbar_fixed: true
 # footer_fixed: true
 
 # Dimensions
-max_width: 1100px
+max_width: 1300px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -131,9 +131,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Architecture thoughts # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: Latest articles
+blog_name: Open architecture notes # blog_name will be displayed in your blog page
+blog_nav_title: notes # your blog must have a title for it to be displayed in the nav bar
+blog_description: Latest notes
 permalink: /blog/:year/:title/
 
 # Pagination

@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Vidak Mijailovic</p>
-    <p>Threads: @vidmij</p>
+    <a href="https://www.threads.net/@vidmij" title="Threads">@vidmij</a>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
@@ -27,8 +27,7 @@ I set up this page to help our teams at [Netigate](https://www.netigate.net/) qu
 For the most part you will find content on Event Driven design, Streaming, Data as a product, Warehousing, Data Lakes, LLM orchestration and ML training & deployment.
 
 * Here you can find the latest entries: [Blog](/blog/)
-* Here you can find the latest notes on distirbuted systems: [Distributed Systems](/blog/)
-* Here you can find the latest notes on process: [Distributed Systems](/blog/)
+* There is a landscape map for Event Driven systems: [Event Driven Landscape Map](/projects/1_project/)
 
 Some posts are simply writing down the conclusions me and my colleagues have reached, for example what our definitions of certain concepts are, for example events. Others are our practical conclusions of error handling when running event driven services in production. Some are our guideliens for how to develop the software with the flavour of ADRs that worked for us and our process.
 

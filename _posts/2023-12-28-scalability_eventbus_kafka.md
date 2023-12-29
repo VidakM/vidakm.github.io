@@ -100,3 +100,9 @@ Scale by having more consumers instead, works with stateless microservices.
 
 No more consumers than partitions.
  
+
+
+## References
+
+External:
+* [Building Reliable Reprocessing and Dead Letter Queues with Apache Kafka - Uber](https://www.uber.com/en-PL/blog/reliable-reprocessing/)
