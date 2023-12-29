@@ -2,8 +2,8 @@
 layout: post
 title: 📡 BFFs and Event Driven Design
 date:  2023-12-28 09:05:00
-description: What are event driven servies and why should we use them?
-tags: events event-driven bff front-end
+description: What is the relationship between front-end and back-end services and how can we make them scalable and fault tollerant?
+tags: events event-driven bff front-end signalr
 categories: guidelines
 thumbnail: assets/blog_images/bffs_and_event_driven/banner_bffs_and_event_driven.png
 toc:

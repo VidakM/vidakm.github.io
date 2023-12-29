@@ -2,8 +2,8 @@
 layout: post
 title: 🚀 Event Driven Service startup first time
 date: 2023-12-28 12:18:00
-description: What are event driven servies and why should we use them?
-tags: events event-driven microservices
+description: How does first-time startup look like for an event driven service and what about hybrid environments without data on eventbus?
+tags: events event-driven microservices data
 categories: guidelines
 thumbnail: assets/blog_images/event_driven_startup/banner_event_driven_startup.png
 toc:

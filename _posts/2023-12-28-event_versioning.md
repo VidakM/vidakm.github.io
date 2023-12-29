@@ -2,8 +2,8 @@
 layout: post
 title: 🗃️ Event Versioning and Upgrades
 date: 2023-12-28 12:00:00
-description: What are event driven servies and why should we use them?
-tags: events event-driven microservices
+description: How can we efficiently version and upgrade our events without breaking existing consumers and ensuring replayability into the future?
+tags: events event-driven microservices data
 categories: guidelines
 thumbnail: assets/blog_images/event_versioning/banner_event_versioning.png
 toc:

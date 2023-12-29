@@ -2,8 +2,8 @@
 layout: post
 title: ⏳ CRUD in microservices
 date:   2023-12-27 09:05:00
-description: What are event driven servies and why should we use them?
-tags: events event-driven microservices
+description: How can we handle transactions in distributed systems and what are the major pitfalls?
+tags: events event-driven services data
 categories: guidelines
 thumbnail: assets/blog_images/crud_in_microservices/banner_crud_in_microservices.png
 toc:

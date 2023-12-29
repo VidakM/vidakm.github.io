@@ -2,8 +2,8 @@
 layout: post
 title: ☁️ Regions, domains, and URL formats
 date: 2023-12-28 13:00:00
-description: What are event driven servies and why should we use them?
-tags: events event-driven microservices
+description: A few ways of segmenting public facing DNS and URLs so that we can efficiently scale and combine cloud and on-premise environments
+tags: dns environment infra
 categories: guidelines
 thumbnail: assets/blog_images/regions_domains_dns/banner_regions_domains_dns.png
 toc:

@@ -3,7 +3,7 @@ layout: post
 title: 📬 Event driven services
 date:   2023-12-27 09:00:00
 description: What are event driven servies and why should we use them?
-tags: events event-driven microservices
+tags: events event-driven services
 categories: guidelines
 thumbnail: assets/blog_images/event_driven_services/banner_event_driven_services.png
 toc:

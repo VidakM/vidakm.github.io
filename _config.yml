@@ -274,8 +274,8 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['events', 'event-driven', 'microservices'] # these tags will be displayed on the front page of your blog
-display_categories: ['guidelines', 'process', 'speculation'] # these categories will be displayed on the front page of your blog
+display_tags: ['events', 'event-driven', 'microservices', 'data', 'environment'] # these tags will be displayed on the front page of your blog
+display_categories: ['guidelines'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
