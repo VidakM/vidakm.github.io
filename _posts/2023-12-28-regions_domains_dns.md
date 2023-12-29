@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🌐 Regions, domains, and URL formats
+title: ☁️ Regions, domains, and URL formats
 date: 2023-12-28 13:00:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices
@@ -33,14 +33,14 @@ Example: `contoso.netigate.io`
 
 ### API endpoints - Apps and product vs customer APIs
 
-#### UI app (:bento:Microfrontends )
-All clients should be served through a dedicated path to accommodate micro-frontends. A user should be able to reach a domain and browse a multitude of clients without noticing they are leaving the domain. For example, `company.io/persona`, then going to `company.io/settings` and finally `company.io/reporting`. This is key to micro frontends. (Microfrontends architecture)
+#### UI app (:bento:Microfrontends )(TBD publish)
+All clients should be served through a dedicated path to accommodate micro-frontends. A user should be able to reach a domain and browse a multitude of clients without noticing they are leaving the domain. For example, `company.io/persona`, then going to `company.io/settings` and finally `company.io/reporting`. This is key to micro frontends. (Microfrontends architecture)(TBD publish)
 
 Proposal for UI: `<customer>.<company>.<tld>/<client-service-name>` 
 
 Example: `contoso.netigate.io/reports`
  
-#### BFF (:satellite:BFFs and Event Driven Design)
+#### BFF [( :satellite:BFFs and Event Driven Design.)](/blog/2023/bffs_and_event_driven/)
 All BFF APIs should be using the domain with `/api` as path prefix followed by their `service-name`, combined into `/api/<service-name>`.  Preferably, their `service-name` is similar or same to their `client-service-name`. 
 
 Proposal for BFF: `<customer>.<company>.<tld>/api/<service-name>`
@@ -57,7 +57,7 @@ Example: `response.netigate.io`
 #### Customer API 
 Customer APIs, whose purpose is to enable customer integration as means of selling value should be separated from BFF APIs. As these services are not BFFs but backend services that expose APIs directly to customers, they can have varying loads and throughput and often place strains on scalability in different patterns from Apps and BFFs. It can be lucrative to combine multiple BFFs into a single Customer API too, which should be avoided as usage from one category might affect the others. We want the ability to scale the app and Customer API independently.
 
-Customer APIs are often deployed to dedicated clusters and often have dedicated read-only DB replicas following :flags:CQRS and state in Event Driven Services.
+Customer APIs are often deployed to dedicated clusters and often have dedicated read-only DB replicas following [( :flags:CQRS and state in Event Driven Services )](/blog/2023/cqrs_and_state/).
 
 As they are generic endpoints for integrations, they are not segmented per customer but instead directly use API as subdomains. Customers are identified using tokens. This also eliminates confusion if an API is used internally, externally or both.
 
