@@ -12,7 +12,7 @@ toc:
 
 {% include figure.html path="assets/blog_images/cqrs_and_state/banner_cqrs_and_state.png" class="img-fluid rounded z-depth-1" %}
 
-You can use CRUD together with Event Streams (in an event bus) to get an internally consistent materialized view. In a previous chapter (:hourglass_flowing_sand:CRUD in Microservices) we discussed the difficulties of getting a snapshot of time and a clear aggregated view of a distributed model. Here we will introduce a method for performing joins in a distributed system between disconnected domains, even developed by separate teams.
+You can use CRUD together with Event Streams (in an event bus) to get an internally consistent materialized view. In a previous chapter [(:hourglass_flowing_sand:CRUD in Microservices)](/blog/2023/CRUD_in_microservices/) we discussed the difficulties of getting a snapshot of time and a clear aggregated view of a distributed model. Here we will introduce a method for performing joins in a distributed system between disconnected domains, even developed by separate teams.
 
 We will then also introduce Event Sourcing and CQRS as a solution to improve application tracing, model managment, scalability, and event emission.
 
@@ -22,12 +22,9 @@ One way to achieve such a feat is to use Fact Events from both services and aggr
 
 This would enable the composition of services A and B into a service C, and for it to act as a complete unit. You can then use service C to query over both datasets and domains in a way that suits their needs but perform writes to the individual services owning the data.
 
-As we have already discussed in CRUD for Microservice, this will lead to a slight delay between a write and reflection in a read, but it will eventually appear correctly. Still, this method is a lot simpler to maintain than a two-phase-commit. Achieving atomicity in a distributed system is impossible by nature and the tools discussed below will help us deal with this. For further reading on eventual consistency and CRUD read :hourglass_flowing_sand:CRUD in Microservices.
+As we have already discussed in CRUD for Microservice, this will lead to a slight delay between a write and reflection in a read, but it will eventually appear correctly. Still, this method is a lot simpler to maintain than a [two-phase-commit](https://en.wikipedia.org/wiki/Two-phase_commit_protocol). Achieving atomicity in a distributed system is impossible by nature and the tools discussed below will help us deal with this. For further reading on eventual consistency and CRUD read [(:hourglass_flowing_sand:CRUD in Microservices)](/blog/2023/CRUD_in_microservices/).
 
 Other benefits are in providng more resilience and decoupling in the system, as extensive reads will not bring down the write system. And the write system being down will not affect reading consumers. 
-
-### Use Case Example
-A good exampel for a real-world Service C would be a BFF (Backend for frontend), such as the Response BFF in Arcadia. It caches data from the Question Intelligence Bank to serve all readers, and then publishes all answers on the event bus for Response Service to accept them.  :white_check_mark:23.04.04 - Questions Bank Intelligence 
 
 {% drawio path="assets/blog_images/cqrs_and_state/Untitled_Diagram-1680606519385.drawio.xml" page_number=0> height=600 %}
 
@@ -38,7 +35,7 @@ When writing data to a table, use a transaction to also write a Fact Event to an
 
 The outbox table can be read and consumed by a seperate async component of the service, such as the Event Publisher in the diagram below. As microservice best practices state a service should own its own database to ensure autonomy and decoupling, we wouldnt recommend having the Event Publisher as its own process. But if you are working on a legacy monolith, or a database without clear owners, then deploying something like a Change Data Capture system can be a way. 
 
-[Change Data Capture (CDC): The Complete Introduction | Confluent](https://www.confluent.io/learn/change-data-capture/)
+[Change Data Capture (CDC): The Complete Introduction / Confluent](https://www.confluent.io/learn/change-data-capture/)
 
 [What is change data capture (CDC)? - SQL Server](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/about-change-data-capture-sql-server?view=sql-server-ver16)
 
@@ -66,10 +63,10 @@ This also means we can combine with the Read Service pattern and store events fo
 
 ## Use Case Example external
 
-TBD, link and explain with Marten https://martendb.io as example
+TBD, link and explain with Marten [https://martendb.io](https://martendb.io) as example
 
 ## Create Fact Events - Simplify with CQRS 
-As we have explored before in Event Driven Services (:mailbox_with_no_mail:Event Driven Services) we strive to emit Fact Events as a solution to inherited problems with latency and networking in distributed systems (:hourglass_flowing_sand:CRUD in Microservices).
+As we have explored before in Event Driven Services [(:mailbox_with_no_mail:Event Driven Services)](/blog/2023/event_driven_services/)  we strive to emit Fact Events as a solution to inherited problems with latency and networking in distributed systems [(:hourglass_flowing_sand:CRUD in Microservices)](/blog/2023/CRUD_in_microservices/).
 
 By using an internal Event Sourcing mechanism, we can simplify our applications model for work in an event driven environment by allowing Fact Events to naturally materialize into an object. Focusing on making simple delta writes and letting snapshots determin our model states is a great start.
 
@@ -87,10 +84,24 @@ CQRS allows us to store the write model in one way, and the read model in a diff
 {% drawio path="assets/blog_images/cqrs_and_state/Untitled_Diagram-1680611086333.drawio.xml" page_number=0> height=500 %}
  
 ## Putting it together
-Event Sourcing and CQRS repositories can be compiled into an Event Driven Service (https://netigate.atlassian.net/wiki/spaces/NG/pages/597950465) that deals with most data destructive issue found in CRUD Microservices (https://netigate.atlassian.net/wiki/spaces/NG/pages/597917832 ). 
+Event Sourcing and CQRS repositories can be compiled into an [(:mailbox_with_no_mail:Event Driven Services)](/blog/2023/event_driven_services/) that deals with most data destructive issue found in [(:hourglass_flowing_sand:CRUD in Microservices)](/blog/2023/CRUD_in_microservices/). 
 
 A service can subscribe to many interesting events and log them down before materializing them into usable models with Event Sourcing. Based on business logic it can then issue new Commands to its own repository and mutate its internal state. Because the mutations are clean write Commands, the CQRS repository write log can directly be used as an Outbox pattern and emitted as Fact Events. 
  
 {% drawio path="assets/blog_images/cqrs_and_state/Untitled_Diagram-1680612042634.drawio.xml" page_number=0> height=500 %}
 
  
+## References
+
+Internal:
+
+* [(:hourglass_flowing_sand:CRUD in Microservices)](/blog/2023/CRUD_in_microservices/)
+* [(:mailbox_with_no_mail:Event Driven Services)](/blog/2023/event_driven_services/) 
+
+
+
+External:
+* [two-phase-commit](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)
+* [Change Data Capture (CDC): The Complete Introduction / Confluent](https://www.confluent.io/learn/change-data-capture/)
+* [What is change data capture (CDC)? - SQL Server](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/about-change-data-capture-sql-server?view=sql-server-ver16)
+* [https://martendb.io](https://martendb.io)

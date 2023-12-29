@@ -5,12 +5,12 @@ date: 2023-12-28 12:38:00
 description: What are event driven servies and why should we use them?
 tags: events event-driven microservices
 categories: guidelines
-thumbnail: assets/blog_images/scalability_eventbus_kafka/banner_scalability_eventbus_kafka.png
+thumbnail: assets/blog_images/scalability_eventbus_kafka/banner_scalability_eventbus_kafka.jpg
 toc:
   sidebar: left
 ---
 
-{% include figure.html path="assets/blog_images/scalability_eventbus_kafka/banner_scalability_eventbus_kafka.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/blog_images/scalability_eventbus_kafka/banner_scalability_eventbus_kafka.jpg" class="img-fluid rounded z-depth-1" %}
 
 Kafka is one of many event buses, sometimes also referred to as event streams or event grids. They are systems enabling one-to-many message publishing, queuing, and in-order delivery, to groups of consumers. They are helpful as they enable asynchronous or delayed processing, as opposed to API solutions such as REST or gRPC, which are blocking and require immediate responses with threats of timeout. They are also very fault tolerant, and help multiple consumers keep track of where they last left off and enable a simple interface to resume and load balance consumption. If one consumer fails, another one can continue where it left off.
 

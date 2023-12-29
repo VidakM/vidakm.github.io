@@ -17,7 +17,7 @@ A BFF (Backend for frontend) is a design pattern that creates a layer between th
 
 ### Why to use a BFF
 There are many benefits to having a BFF, here are a few key ones.
-* One of the main benefits of using a BFF is that it allows the frontend to have a tailored API that suits its specific needs and preferences. For example, the BFF can compose data from multiple backend services and present it in one single joined model or implement APIs the backend services don’t have. Read more about that here :flags:CQRS and state in Event Driven Services | Read services   Composing multiple services into one 
+* One of the main benefits of using a BFF is that it allows the frontend to have a tailored API that suits its specific needs and preferences. For example, the BFF can compose data from multiple backend services and present it in one single joined model or implement APIs the backend services don’t have. Read more about that here [( :flags:CQRS and state in Event Driven Services / Read services Composing multiple services into one)](/blog/2023/cqrs_and_state/#read-services---composing-multiple-services-into-one)
 This can improve velocity, performance, usability, and maintainability of the frontend. 
 * Having a BFF abstract away the backend API also decouples the frontend from the backend, making it easier to make sweeping changes in backend without affecting the other.
 * It also enables greater connectivity, by not forcing every service or small team to implement REST APIs on their service, they are free to use gRPC, Kafka or any other tool that suits their domain best, the BFF simply converts. In some cases Kafka converter apps need to be written, or SignalR becomes an afterthought.
@@ -43,14 +43,14 @@ BFF patterns also come with some potential hazards or pitfalls that should be co
 Therefore, we should view the BFF as a decoupled application built on top of our backend network with the goal of streamlining it for consumption. As it is an App on the existing solution, and a backend service for the front end, it can implement its own caching, querying logic and other assisting tools that enable frontend use cases without affecting core system business logic.
 
 #### Example
-An example of a BFF adding their own logic without affecting business logic could be advanced filtering scenarios. A Persona Service contains a group hierarchy and persona objects with varying properties it and either allows retreival of all objects or specific individuals. For an advanced search and filtering capability, the BFF can cache the users to a search platform like Postgres or OpenSearch and enable advanced filtering for the UI. Of course, this will mean it needs to keep this cache up to date, but there are tools for this as we discussed in Event Driven Services and Event Sourcing. https://netigate.atlassian.net/wiki/spaces/NG/pages/598180204/CQRS+and+state+in+Event+Driven+Services#Read-services---Composing-multiple-services-into-one  
+An example of a BFF adding their own logic without affecting business logic could be advanced filtering scenarios. A Persona Service contains a group hierarchy and persona objects with varying properties it and either allows retreival of all objects or specific individuals. For an advanced search and filtering capability, the BFF can cache the users to a search platform like Postgres or OpenSearch and enable advanced filtering for the UI. Of course, this will mean it needs to keep this cache up to date, but there are tools for this as we discussed in Event Driven Services and Event Sourcing. [( :flags:CQRS and state in Event Driven Services / Read services Composing multiple services into one)](/blog/2023/cqrs_and_state/#read-services---composing-multiple-services-into-one)
 
 ### Solving the hazard by decoupling
 To solve the tight API coupling and performance coupling, we can use the concepts of Event Sourcing and Event Driven Design. If the BFF would decrease the amount of data retrieval it makes from the backend it would be able to function even if the backend was down, it’s requests would be returned faster, and high user activity would not affect the core system performance (the backend).
 
 You might initially try to cache data locally in the BFF for some requests, but you’ll quickly realize it's difficult to determine if cache misses are due to data genuinely not existing or due to the cache not being up to date.
 
-Thus, you might as well just opt in to building in an event driven model such as an Event Driven Service (https://netigate.atlassian.net/wiki/spaces/NG/pages/597950465 ) from the start and save time in converting later. For implementation guidelines look here https://netigate.atlassian.net/wiki/spaces/NG/pages/598180204. But your output would look like something below.
+Thus, you might as well just opt in to building in an event driven model such as an Event Driven Service [(:mailbox_with_no_mail:Event Driven Services)](http://localhost:8080/blog/2023/event_driven_services/) from the start and save time in converting later. For implementation guidelines look here [( :flags:CQRS and state in Event Driven Services)](/blog/2023/cqrs_and_state/). But your output would look like something below.
 
 BFFs would subscribe to Fact Events from other Event Driven Services in the network and build up a local cache using Event Logging and Event Sourcing. All reads would be contained locally to the service. Incoming write requests would be converted to Command Events or performed as direct gRPC requests to ensure direct feedback, for example to get a status code as return.
 
@@ -65,3 +65,13 @@ To adress this we can use the same event driven techniques that Event Driven Ser
 SignalR can help solve this problem by using WebSockets or other fallback techniques to establish a persistent connection between the server and the client. The server can then push events to the client whenever there is a change in the data, such as an update, a deletion, or an insertion, due to an incoming Fact Event. The client can then update the UI accordingly by directly subscribing to Fact Events, without waiting for the BFF's cache to be refreshed and poll again. 
  
  
+## References
+
+Internal:
+
+* [( :flags:CQRS and state in Event Driven Services / Read services Composing multiple services into one)](/blog/2023/cqrs_and_state/#read-services---composing-multiple-services-into-one)
+* [(:mailbox_with_no_mail:Event Driven Services)](http://localhost:8080/blog/2023/event_driven_services/)
+* [( :flags:CQRS and state in Event Driven Services)](/blog/2023/cqrs_and_state/)
+
+External:
+* [Micro Frontends - Martin Fowlerl](https://martinfowler.com/articles/micro-frontends.html?utm_source=pocket_reader)

@@ -119,7 +119,7 @@ External:
 * [NATS](https://nats.io) 
 * [RabbitMQ](https://www.rabbitmq.com) 
 * [Dead Letter Queue](https://en.wikipedia.org/wiki/Dead_letter_queue)
-* [(Building & Operating High-Fidelity Data Streams)](https://www.infoq.com/articles/high-fidelity-data-streams/?utm_source=pocket_reader)
+* [Building & Operating High-Fidelity Data Streams](https://www.infoq.com/articles/high-fidelity-data-streams/?utm_source=pocket_reader)
 * [Designing Events-First Microservices - Jonas Boner - QCon 2018](https://www.youtube.com/watch?v%253D1hwuWmMNT4c)
 * [Event Design & Event-first Development - David Boyne GOTO 2022](https://www.youtube.com/watch?v=GBzr48Mj2JU&list=PLnWKhEdO_Yk0glJySVV6NC9G0NgnhW4UW&index=8)
 * [The Many Meanings of Event-Driven Architecture - Martin Fowler GOTO 2017](https://www.youtube.com/watch?v%253DSTKCRSUsyP0%2526list%253DPLnWKhEdO_Yk0glJySVV6NC9G0NgnhW4UW%2526index%253D1)
