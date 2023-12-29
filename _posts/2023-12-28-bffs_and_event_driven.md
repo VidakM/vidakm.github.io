@@ -1,13 +1,16 @@
 ---
-layout: post
+layout: distill
 title: 📡 BFFs and Event Driven Design
 date:  2023-12-28 09:05:00
 description: What is the relationship between front-end and back-end services and how can we make them scalable and fault tollerant?
 tags: events event-driven bff front-end signalr
 categories: guidelines
 thumbnail: assets/blog_images/bffs_and_event_driven/banner_bffs_and_event_driven.png
-toc:
-  sidebar: left
+authors:
+  - name:  Vidak Mijailovic
+    url: "https://vidakm.github.io"
+    affiliations:
+      name: KTH, Netigate
 ---
 
 {% include figure.html path="assets/blog_images/bffs_and_event_driven/banner_bffs_and_event_driven.png" class="img-fluid rounded z-depth-1" %}

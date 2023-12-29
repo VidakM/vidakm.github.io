@@ -1,13 +1,19 @@
 ---
-layout: post
+layout: distill
 title: 🧮 Scalability and Event Bus (Kafka)
 date: 2023-12-28 12:38:00
 description: What is an eventbus and what are the simplest TLDR scalability advice for maintaining throughput while never skipping a beat
 tags: events event-driven microservices eventbus data environment
 categories: guidelines
 thumbnail: assets/blog_images/scalability_eventbus_kafka/banner_scalability_eventbus_kafka.jpg
-toc:
-  sidebar: left
+featured: true
+authors:
+  - name:  Vidak Mijailovic
+    url: "https://vidakm.github.io"
+    affiliations:
+      name: KTH, Netigate
+# toc:
+#   sidebar: top
 ---
 
 {% include figure.html path="assets/blog_images/scalability_eventbus_kafka/banner_scalability_eventbus_kafka.jpg" class="img-fluid rounded z-depth-1" %}

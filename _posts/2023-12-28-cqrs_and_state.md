@@ -1,13 +1,18 @@
 ---
-layout: post
+layout: distill
 title: 🎏 CQRS and state in Event Driven Services
 date:   2023-12-28 09:10:00
 description: How should the internals of an event driven service look like and what is event sourcing and the outbox pattern?
 tags: events event-driven microservices data 
 categories: guidelines
 thumbnail: assets/blog_images/cqrs_and_state/banner_cqrs_and_state.png
-toc:
-  sidebar: left
+featured: true
+authors:
+  - name:  Vidak Mijailovic
+    url: "https://vidakm.github.io"
+    affiliations:
+      name: KTH, Netigate
+# toc: true
 ---
 
 {% include figure.html path="assets/blog_images/cqrs_and_state/banner_cqrs_and_state.png" class="img-fluid rounded z-depth-1" %}

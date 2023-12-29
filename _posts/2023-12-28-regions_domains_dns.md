@@ -1,13 +1,16 @@
 ---
-layout: post
+layout: distill
 title: ☁️ Regions, domains, and URL formats
 date: 2023-12-28 13:00:00
 description: A few ways of segmenting public facing DNS and URLs so that we can efficiently scale and combine cloud and on-premise environments
 tags: dns environment infra
 categories: guidelines
 thumbnail: assets/blog_images/regions_domains_dns/banner_regions_domains_dns.png
-toc:
-  sidebar: left
+authors:
+  - name:  Vidak Mijailovic
+    url: "https://vidakm.github.io"
+    affiliations:
+      name: KTH, Netigate
 ---
 
 {% include figure.html path="assets/blog_images/regions_domains_dns/banner_regions_domains_dns.png" class="img-fluid rounded z-depth-1" %}

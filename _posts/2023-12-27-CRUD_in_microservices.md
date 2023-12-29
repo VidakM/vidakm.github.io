@@ -1,13 +1,16 @@
 ---
-layout: post
+layout: distill
 title: ⏳ CRUD in microservices
 date:   2023-12-27 09:05:00
 description: How can we handle transactions in distributed systems and what are the major pitfalls?
 tags: events event-driven services data
 categories: guidelines
 thumbnail: assets/blog_images/crud_in_microservices/banner_crud_in_microservices.png
-toc:
-  sidebar: left
+authors:
+  - name:  Vidak Mijailovic
+    url: "https://vidakm.github.io"
+    affiliations:
+      name: KTH, Netigate
 ---
 
 {% include figure.html path="assets/blog_images/crud_in_microservices/banner_crud_in_microservices.png" class="img-fluid rounded z-depth-1" %}

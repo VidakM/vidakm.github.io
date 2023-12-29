@@ -1,13 +1,16 @@
 ---
-layout: post
+layout: distill
 title: 🛍️ Notification events and strong coupling
 date: 2023-12-28 10:05:00
 description: What are the hazards of Notification events and the tight coupling they create and when should it be used?
 tags: events event-driven microservices data
 categories: guidelines
 thumbnail: assets/blog_images/notification_events_and_coupling/banner_notification_events_and_coupling.png
-toc:
-  sidebar: left
+authors:
+  - name:  Vidak Mijailovic
+    url: "https://vidakm.github.io"
+    affiliations:
+      name: KTH, Netigate
 ---
 
 {% include figure.html path="assets/blog_images/notification_events_and_coupling/banner_notification_events_and_coupling.png" class="img-fluid rounded z-depth-1" %}

@@ -1,13 +1,16 @@
 ---
-layout: post
+layout: distill
 title: 🗃️ Event Versioning and Upgrades
 date: 2023-12-28 12:00:00
 description: How can we efficiently version and upgrade our events without breaking existing consumers and ensuring replayability into the future?
 tags: events event-driven microservices data
 categories: guidelines
 thumbnail: assets/blog_images/event_versioning/banner_event_versioning.png
-toc:
-  sidebar: left
+authors:
+  - name:  Vidak Mijailovic
+    url: "https://vidakm.github.io"
+    affiliations:
+      name: KTH, Netigate
 ---
 
 {% include figure.html path="assets/blog_images/event_versioning/banner_event_versioning.png" class="img-fluid rounded z-depth-1" %}

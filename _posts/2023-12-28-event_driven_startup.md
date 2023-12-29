@@ -1,13 +1,19 @@
 ---
-layout: post
+layout: distill
 title: 🚀 Event Driven Service startup first time
 date: 2023-12-28 12:18:00
 description: How does first-time startup look like for an event driven service and what about hybrid environments without data on eventbus?
 tags: events event-driven microservices data
 categories: guidelines
 thumbnail: assets/blog_images/event_driven_startup/banner_event_driven_startup.png
-toc:
-  sidebar: left
+# toc:
+#   sidebar: left
+
+authors:
+  - name:  Vidak Mijailovic
+    url: "https://vidakm.github.io"
+    affiliations:
+      name: KTH, Netigate
 ---
 
 {% include figure.html path="assets/blog_images/event_driven_startup/banner_event_driven_startup.png" class="img-fluid rounded z-depth-1" %}
