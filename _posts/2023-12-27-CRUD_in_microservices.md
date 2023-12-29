@@ -8,7 +8,7 @@ categories: guidelines
 thumbnail: assets/blog_images/crud_in_microservices/banner_crud_in_microservices.png
 authors:
   - name:  Vidak Mijailovic
-    url: "https://vidakm.github.io"
+    url: "https://www.threads.net/@vidmij" 
     affiliations:
       name: KTH, Netigate
 ---

@@ -9,7 +9,7 @@ thumbnail: assets/blog_images/cqrs_and_state/banner_cqrs_and_state.png
 featured: true
 authors:
   - name:  Vidak Mijailovic
-    url: "https://vidakm.github.io"
+    url: "https://www.threads.net/@vidmij" 
     affiliations:
       name: KTH, Netigate
 # toc: true

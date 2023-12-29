@@ -8,7 +8,7 @@ categories: guidelines
 thumbnail: assets/blog_images/event_driven_services/banner_event_driven_services.png
 authors:
   - name:  Vidak Mijailovic
-    url: "https://vidakm.github.io"
+    url: "https://www.threads.net/@vidmij" 
     affiliations:
       name: KTH, Netigate
 ---

@@ -8,7 +8,7 @@ categories: guidelines
 thumbnail: assets/blog_images/regions_domains_dns/banner_regions_domains_dns.png
 authors:
   - name:  Vidak Mijailovic
-    url: "https://vidakm.github.io"
+    url: "https://www.threads.net/@vidmij" 
     affiliations:
       name: KTH, Netigate
 ---

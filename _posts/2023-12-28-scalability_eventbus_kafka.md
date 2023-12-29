@@ -9,7 +9,7 @@ thumbnail: assets/blog_images/scalability_eventbus_kafka/banner_scalability_even
 featured: true
 authors:
   - name:  Vidak Mijailovic
-    url: "https://vidakm.github.io"
+    url: "https://www.threads.net/@vidmij" 
     affiliations:
       name: KTH, Netigate
 # toc:
@@ -31,7 +31,7 @@ An event bus is at its core a distributed message broker, which enables publishe
 ### Topics and loose couplings
 The key aspect here is that the producer and consumers are disconnected and unaware of each other. They only share the knowledge of the topic's existence and perhaps the format of events emitted through it. This enables systems to expand with new services and features without affecting producers. This leads to greater autonomy and looser coupling, as services don’t need to know each other’s DNS records, REST endpoints or similar.
 
-By designing in this fashion, we can quickly expand our systems with many services doing a variety of things. All we need to do is to know which topics to subscribe to for the data we need, and to ensure we version our events in a way that will enable simpler maintenance. You can read more about that here [(:card_box:Event Versioning and Upgrades)](/blog/2023/event_versioning/). 
+By designing in this fashion, we can quickly expand our systems with many services doing a variety of things. All we need to do is to know which topics to subscribe to for the data we need, and to ensure we version our events in a way that will enable simpler maintenance. You can read more about that here [(🗃️ Event Versioning and Upgrades)](/blog/2023/event_versioning/). 
 
 ### Partitions and scaling
 As some producers will produce a lot more than others, and some consumers will need to parallelize more work than others, we an effective way to increase our throughput. To do so, topics are further divided into partitions. A partition can be seen as a hidden topic within a topic that the even bus uses to dynamically distribute load between consumers. It splits up the events into multiple hidden queues and so enables many instances of the same service (consumer groups) to consume events concurrently, instead of working with slow Mutexes and locking conditions on a single queue.

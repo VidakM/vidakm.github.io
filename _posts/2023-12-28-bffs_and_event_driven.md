@@ -8,7 +8,7 @@ categories: guidelines
 thumbnail: assets/blog_images/bffs_and_event_driven/banner_bffs_and_event_driven.png
 authors:
   - name:  Vidak Mijailovic
-    url: "https://vidakm.github.io"
+    url: "https://www.threads.net/@vidmij" 
     affiliations:
       name: KTH, Netigate
 ---
