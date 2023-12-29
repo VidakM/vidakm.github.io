@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://vidakm.github.io//sitemap.xml
+Sitemap: https://vidakm.github.io/sitemap.xml
