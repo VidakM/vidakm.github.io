@@ -14,10 +14,10 @@ toc:
 
 Kafka is one of many event buses, sometimes also referred to as event streams or event grids. They are systems enabling one-to-many message publishing, queuing, and in-order delivery, to groups of consumers. They are helpful as they enable asynchronous or delayed processing, as opposed to API solutions such as REST or gRPC, which are blocking and require immediate responses with threats of timeout. They are also very fault tolerant, and help multiple consumers keep track of where they last left off and enable a simple interface to resume and load balance consumption. If one consumer fails, another one can continue where it left off.
 
-They are the backbone of Event Driven Architecture, as they help Event Driven Services observe and keep a historical record of the world around them. They are based on eventual consistency, the notion that there's no “now” state in a perpetually evolving distributed system and that we instead should build systems that will eventually receive all events and settle in the correct state. Doing atomic CRUD is doomed to be complex.  Read more about them here :mailbox_with_no_mail:Event Driven Services and about eventual consistency here :hourglass_flowing_sand:CRUD in Microservices .
+They are the backbone of Event Driven Architecture, as they help Event Driven Services observe and keep a historical record of the world around them. They are based on eventual consistency, the notion that there's no “now” state in a perpetually evolving distributed system and that we instead should build systems that will eventually receive all events and settle in the correct state. Doing atomic CRUD is doomed to be complex.  Read more about them here [(:mailbox_with_no_mail: Event Driven Services)](/blog/2023/event_driven_services/) and about eventual consistency here [(:hourglass_flowing_sand:CRUD in Microservices)](/blog/2023/CRUD_in_microservices/) .
 
 ### Broker and Topics
-An event bus is at its core a distributed message broker, which enables publishers to push events to “topics” that subscribers can consume from. Subscribers to do so by using a broker client, that connects to the broker and pulls down messages. A topic can be created by a producer or by the configuration in a broker. They are defined simply by their string name, such as io.contoso.reportingservice.events but can however have configurations and have more properties. To read more on naming conventions, look here :mailbox_with_no_mail:Event Driven Services | Event bus and topics . To understand events read this :e-mail:Events .
+An event bus is at its core a distributed message broker, which enables publishers to push events to “topics” that subscribers can consume from. Subscribers to do so by using a broker client, that connects to the broker and pulls down messages. A topic can be created by a producer or by the configuration in a broker. They are defined simply by their string name, such as io.contoso.reportingservice.events but can however have configurations and have more properties. To read more on naming conventions, look here [( :mailbox_with_no_mail:Event Driven Services | Event bus and topics)](/blog/2023/event_driven_services/#event-bus-and-topics). To understand events read this [( :e-mail:Events )](/blog/2023/events/) .
 
 
 {% drawio path="assets/blog_images/scalability_eventbus_kafka/Untitled_Diagram-1683297116253.drawio.xml" page_number=0> height=300 %}
@@ -25,7 +25,7 @@ An event bus is at its core a distributed message broker, which enables publishe
 ### Topics and loose couplings
 The key aspect here is that the producer and consumers are disconnected and unaware of each other. They only share the knowledge of the topic's existence and perhaps the format of events emitted through it. This enables systems to expand with new services and features without affecting producers. This leads to greater autonomy and looser coupling, as services don’t need to know each other’s DNS records, REST endpoints or similar.
 
-By designing in this fashion, we can quickly expand our systems with many services doing a variety of things. All we need to do is to know which topics to subscribe to for the data we need, and to ensure we version our events in a way that will enable simpler maintenance. You can read more about that here :card_box:Event Versioning and Upgrades. 
+By designing in this fashion, we can quickly expand our systems with many services doing a variety of things. All we need to do is to know which topics to subscribe to for the data we need, and to ensure we version our events in a way that will enable simpler maintenance. You can read more about that here [(:card_box:Event Versioning and Upgrades)](/blog/2023/event_versioning/). 
 
 ### Partitions and scaling
 As some producers will produce a lot more than others, and some consumers will need to parallelize more work than others, we an effective way to increase our throughput. To do so, topics are further divided into partitions. A partition can be seen as a hidden topic within a topic that the even bus uses to dynamically distribute load between consumers. It splits up the events into multiple hidden queues and so enables many instances of the same service (consumer groups) to consume events concurrently, instead of working with slow Mutexes and locking conditions on a single queue.
@@ -88,7 +88,7 @@ We should avoid have large, resource consuming services that try to buffer up me
  
 Don’t drop state in consution. publish with ack, publish without ack, publish async with callback ack.
 
-Difficult to scale by batching. DLQ nad other things such as filiure queue.
+Difficult to scale by batching. DLQ and other things such as filiure queue.
 
 Scale by having more consumers instead, works with stateless microservices.
 
