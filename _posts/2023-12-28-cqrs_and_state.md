@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: 🎏 CQRS and state in Event Driven Services
+title: CQRS and state in Event Driven Services
 date:   2023-12-28 09:10:00
 description: How should the internals of an event driven service look like and what is event sourcing and the outbox pattern?
 tags: events event-driven microservices data 

@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: 🗃️ Event Versioning and Upgrades
+title: Event Versioning and Upgrades
 date: 2023-12-28 12:00:00
 description: How can we efficiently version and upgrade our events without breaking existing consumers and ensuring replayability into the future?
 tags: events event-driven microservices data

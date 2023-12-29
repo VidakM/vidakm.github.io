@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: ☁️ Regions, domains, and URL formats
+title: Regions, domains, and URL formats
 date: 2023-12-28 13:00:00
 description: A few ways of segmenting public facing DNS and URLs so that we can efficiently scale and combine cloud and on-premise environments
 tags: dns environment infra

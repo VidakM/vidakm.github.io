@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: ⏳ CRUD in microservices
+title: CRUD in microservices
 date:   2023-12-27 09:05:00
 description: How can we handle transactions in distributed systems and what are the major pitfalls?
 tags: events event-driven services data

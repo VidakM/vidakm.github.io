@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: 📡 BFFs and Event Driven Design
+title: BFFs and Event Driven Design
 date:  2023-12-28 09:05:00
 description: What is the relationship between front-end and back-end services and how can we make them scalable and fault tollerant?
 tags: events event-driven bff front-end signalr

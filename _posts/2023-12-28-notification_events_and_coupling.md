@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: 🛍️ Notification events and strong coupling
+title: Notification events and strong coupling
 date: 2023-12-28 10:05:00
 description: What are the hazards of Notification events and the tight coupling they create and when should it be used?
 tags: events event-driven microservices data

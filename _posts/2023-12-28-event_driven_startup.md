@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: 🚀 Event Driven Service startup first time
+title: Event Driven Service startup first time
 date: 2023-12-28 12:18:00
 description: How does first-time startup look like for an event driven service and what about hybrid environments without data on eventbus?
 tags: events event-driven microservices data
